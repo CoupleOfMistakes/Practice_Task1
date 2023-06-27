@@ -2,8 +2,8 @@ require 'date'
 puts "\tPractice Task 1\nVlada Fal\n\n"
 
 module Validation
-	def self.valid_name?(str)
-		return false if str.nil? || str.empty? || str.length > 40
+    def self.valid_name?(str)
+	return false if str.nil? || str.empty? || str.length > 40
         /^[a-zA-Z\s\-]+$/.match?(str)
 	end
 
